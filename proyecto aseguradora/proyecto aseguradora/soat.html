@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Aseguradora</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  
+</head>
+
+<body>
+  <header class="nombre-sitio">
+    <h1>Proyecto Aseguradora - <span>EscudoSeguro</span> </h1>
+  </header>
+
+  <div class="contenedor-navegacion">
+  <nav class="nav-principal contenedor">
+    <a href="index.html">Inicio</a>
+    <a href="soat.html">Soat</a>
+    <a href="siniestro.html">Siniestro</a>
+    <a href="admin.html">Admin</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</div>
+  
+  <section class="form-register">
+    <h4>Formulario Registro de Cliente</h4>
+    <!-- Campos de nombre y cedula -->
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombren Completo">
+    <input class="controls" type="text" name="cedula" id="cedula" placeholder="Ingrese su cedula"><br>
+    <!-- Fecha de nacimiento -->
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+    <!-- Fecha de registro -->
+    <label for="fecha_registro">Fecha de Registro:</label><br>
+    <input type="date" id="fecha_registro" name="fecha_registro" required><br>
+    <!-- Teléfono -->
+    <label for="telefono">Teléfono:</label><br>
+    <input class="controls"  type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" title="Por favor ingrese un número de teléfono válido" required><br>
+    <!-- Género -->
+    <label for="genero">Género:</label><br>
+    <select id="genero" name="genero" required>
+        <option value="">Seleccione...</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+    </select><br>
+    <!-- Botón de envío -->
+    <input class="botons" type="submit" value="Registrar">
+    
+  </section>
+
+  <section class="form-register-car">
+    <h4>Formulario Registro de Vehiculo</h4>
+    <!-- Campos de generacion vehiculo -->
+    <input class="controls" type="text" name="generacion_vehiculo" id="generacion_vehiculo" placeholder="Ingrese el año del vehiculo">
+    <!-- Fecha de placa vehiculo -->
+    <input class="controls" type="text" name="placa_vehiculo" id="placa_vehiculo" placeholder="Ingrese la placa del vehiculo"><br>
+    <!-- Uso vehiculo -->
+    <input class="controls" type="text" name="uso_vehiculo" id="uso_vehiculo" placeholder="Ingrese el uso del vehiculo"><br>
+    <!-- Tipo Vehiculo -->
+    <input class="controls" type="text" name="tipo_vehiculo" id="tipo_vehiculo" placeholder="Ingrese el tipo de vehiculo"><br>
+    <!-- Botón de envío -->
+    <input class="botons_car" type="submit" value="Registrar">
+    
+  </section>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+  </script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Aseguradora</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  
+</head>
+
+<body>
+  <header class="nombre-sitio">
+    <h1>Proyecto Aseguradora - <span>EscudoSeguro</span> </h1>
+  </header>
+
+  <div class="contenedor-navegacion">
+  <nav class="nav-principal contenedor">
+    <a href="index.html">Inicio</a>
+    <a href="soat.html">Soat</a>
+    <a href="siniestro.html">Siniestro</a>
+    <a href="admin.html">Admin</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</div>
+  
+  <section class="form-registro-siniestro">
+    <h4>Formulario Registro de Siniestro</h4>
+
+    <!-- Tipo cliente -->
+    <label for="cliente">Cliente:</label><br>
+    <select id="cliente" name="cliente" required>
+      <option value="">Seleccione...</option>
+      <option value="cliente1">cliente1</option>
+      <option value="cliente2">cliente2</option>
+      <option value="otro">Otro</option>
+    </select><br>
+
+  <!-- Tipo poliza -->
+    <label for="poliza">Poliza:</label><br>
+    <select id="poliza" name="poliza" required>
+      <option value="">Seleccione...</option>
+      <option value="poliza1">poliza1</option>
+      <option value="poliza2">poliza2</option>
+      <option value="otro">Otro</option>
+    </select><br>
+
+    <!-- Fecha de siniestro -->
+    <label for="fecha_siniestro">Fecha de Siniestro:</label><br>
+    <input class="controls" type="date" id="fecha_siniestro" name="fecha_siniestro" required><br>
+    
+    <!-- Lugar de siniestro -->
+    <input class="controls" type="text" name="lugar_siniestro" id="lugar_siniestro" placeholder="Ingrese el lugar del siniestro"><br>
+    
+    <!-- Botón de envío -->
+    <input class="botons_car" type="submit" value="Registrar">
+    
+  </section>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+  </script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
